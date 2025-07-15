@@ -21,6 +21,7 @@ return {
             '.git',
             '.DS_Store',
             'node_modules',
+            '.next',
           },
           never_show = {
             '.git',
