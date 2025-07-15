@@ -9,7 +9,7 @@ return {
       vim.api.nvim_set_hl(0, 'yellow', { fg = '#FFDE00' })
     end)
 
-    vim.g.rainbow_delimiters = { highlight = highlight }
+    vim.g.rainbow_delimiters = { highlight = { 'yellow' } }
     require('ibl').setup { scope = { highlight = { 'yellow' } } }
 
     hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
